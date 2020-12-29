@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>FAQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body{
+  background-color:#d4f3ff;
+}
+h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+p{font-family: "Gadugi";
+font-size: 109%;}
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.button {
+  background-color:  rgba(0, 0,51,.87);
+
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.active {
+  background-color: #0a1c73;
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header style="padding:30px 5px;text-align:center; background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+ <h1 style="font-family:Century Gothic" >VacciNation</h1>
+</header>
+<ul>
+  <li><a  href="home.html">Home</a></li>
+  <li><a  href="login.html">Login</a></li>
+  <li><a class="active" href="faq.html">FAQ</a></li>
+  <li><a href="contact.html">Contacts</a></li>
+
+</ul>
+<br><center><h2 id="top"><b>Frequently Asked Questions</b></h2>
+<h4>Note: The information provided below is only for public awareness. <b>Please consult a doctor for professional advice.</b></h4></center>
+<script>(function() {
+
+     'use strict';
+
+    // Feature Test
+    if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+
+        // Function to animate the scroll
+        var smoothScroll = function (anchor, duration) {
+
+            // Calculate how far and how fast to scroll
+            var startLocation = window.pageYOffset;
+            var endLocation = anchor.offsetTop;
+            var distance = endLocation - startLocation;
+            var increments = distance/(duration/16);
+            var stopAnimation;
+
+            // Scroll the page by an increment, and check if it's time to stop
+            var animateScroll = function () {
+                window.scrollBy(0, increments);
+                stopAnimation();
+            };
+
+            // If scrolling down
+            if ( increments >= 0 ) {
+                // Stop animation when you reach the anchor OR the bottom of the page
+                stopAnimation = function () {
+                    var travelled = window.pageYOffset;
+                    if ( (travelled >= (endLocation - increments)) || ((window.innerHeight + travelled) >= document.body.offsetHeight) ) {
+                        clearInterval(runAnimation);
+                    }
+                };
+            }
+            // If scrolling up
+            else {
+                // Stop animation when you reach the anchor OR the top of the page
+                stopAnimation = function () {
+                    var travelled = window.pageYOffset;
+                    if ( travelled <= (endLocation || 0) ) {
+                        clearInterval(runAnimation);
+                    }
+                };
+            }
+
+            // Loop the animation function
+            var runAnimation = setInterval(animateScroll, 16);
+
+        };
+
+        // Define smooth scroll links
+        var scrollToggle = document.querySelectorAll('.scroll');
+
+        // For each smooth scroll link
+        [].forEach.call(scrollToggle, function (toggle) {
+
+            // When the smooth scroll link is clicked
+            toggle.addEventListener('click', function(e) {
+
+                // Prevent the default link behavior
+                e.preventDefault();
+
+                // Get anchor link and calculate distance from the top
+                var dataID = toggle.getAttribute('href');
+                var dataTarget = document.querySelector(dataID);
+                var dataSpeed = toggle.getAttribute('data-speed');
+
+                // If the anchor exists
+                if (dataTarget) {
+                    // Scroll to the anchor
+                    smoothScroll(dataTarget, dataSpeed || 500);
+                }
+
+            }, false);
+
+        });
+
+    }
+
+ })();</script>
+<br>
+          <center><p >
+          <button class="button"><a class="scroll" data-speed="2000" href="#immunity">Jump to >> Immunity and Vaccines</a></button>
+          <button class="button"><a class="scroll" data-speed="2000" href="#new">Jump to >> New-born Vaccination</a></button>
+          <button class="button"><a class="scroll" data-speed="2000" href="#vacc">Jump to >> Vaccination of Pregnant Women</a></button>
+        <button class="button"><a class="scroll" data-speed="2000" href="#side">Jump to >> Side Effects and Contraindications</a></button>
+        </p></center>
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+  <div class="w3-card-4 w3-margin w3-white">
+
+    <div class="w3-container">
+      <h3 id="immunity"><b>Immunity and Vaccines</b></h3>
+      </div>
+
+    <div class="w3-container">
+      <p>
+<b>What is immunity?</b><br>
+Immunity refers to resistance against infection caused by microorganisms(bacteria and viruses) and their products(toxins). <br><br>
+<b>What is immunization?</b><br>
+Immunization is the process whereby a person is made immune or resistant to an infectious disease, typically by the administration of a vaccine. Vaccines stimulate the body’s own immune system to protect the person against subsequent infection or disease.<br><br>
+<b>Do children have natural immunity against diseases?</b><br>
+Babies are born with natural immunity against some diseases, which they get from their mothers (in utero) and by breastfeeding in the early days of their life. But as they grow, this immunity gradually decreases. Immunization further enhances their immunity and protects them against vaccine-preventable diseases.<br><br>
+<b>How do vaccines protect from disease-causing organisms?</b><br>
+Vaccines contain either weakened or killed versions of viruses or bacteria, or an antigenic substance prepared from the causative agent, or a synthetic substitute.Once administered in the body by injection, mouth or by aerosol, stimulate the immune response to produce “antibodies” targeting those infectious agents,thereby producing protection against infections. Each vaccine provides immunity against a particular disease; therefore, a number of vaccines are administered to children and pregnant women to protect them from many vaccine preventable diseases<br><br>
+<b>Why is timely vaccination important?</b><br>
+Age of administration of vaccines is decided by medical and public health experts after careful study of disease epidemiology and protective efficacy of different vaccines. Vaccines ensure best protection when they are given at the right time. India’s National Immunization Schedule has been designed to protect children since birth, and at the ages when they are vulnerable to specific vaccine-preventable diseases.<br>
+ The recommended age for vaccination by different vaccines aims to achieve the best immune protection to cover the period in life when vulnerability to disease is highest. When children are not vaccinated at all or get vaccinated beyond the recommended age, they remain unprotected and may get infected from a vaccine-preventable disease.<br><br>
+<b>When does the process of child immunization start?</b><br>
+Immunization process starts when a child is in utero. Immunity developed from TT vaccine given to pregnant women passes to her child and protects from neonatal tetanus. Immunity against some infections, like measles, is transferred to child as passive immunity and protects from infection for some period after birth. Under National Immunization Schedule, BCG, OPV, and HepB vaccines are given to child immediately after birth.<br><br>
+<button class="button"><a class="scroll" data-speed="2000" href="#top">Jump to Top</a></button>
+</p>
+      <div class="w3-row">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="w3-card-4 w3-margin w3-white">
+
+    <div class="w3-container">
+      <h3 id="new"><b>New-born Vaccination</b></h3>
+      </div>
+
+    <div class="w3-container">
+      <p>
+<b>What vaccines should be given to a new-born?</b><br>
+According to National Immunization Schedule, one dose each of three vaccines, OPV,BCG and Hepatitis B, should be given to new-borns irrespective of the place of delivery. This is recommended for all institutional and non-institutional deliveries, in both public and private sectors.
+<br><br>
+<b>Is there any time limit for these vaccines recommended for newborns?</b><br>
+Yes. Time limit for vaccines recommended for new-borns is as follows:<br>
+1. <b>Hepatitis B</b> (known as “birth dose”): should be given within 24 hours of birth to protect the new-born from possible Hepatitis B infection that gets transferred from mother during delivery. If birth dose of Hepatitis B vaccine is given beyond 24 hours, then it will not provide this protection. However, maximum protection against Hepatitis B transmission is provided if the vaccine is given within 12 hours of birth.<br>
+
+2.<b>OPV</b> (known as “zero dose”): should be given within 15 days of birth, day of birth taken as day zero.<br>
+3.<b>BCG</b>: should be given as early as possible after birth to provide maximum protection from childhood tuberculosis infection. BCG vaccine should not be given to the child beyond one year of age.
+<br><br>
+<b>Why is the dose of polio vaccine that is given within 15 days of birth called the “zero dose”?</b><br>
+The dose of OPV given at birth is called the “zero dose” because:
+ <br>It is an “extra” dose that adds to the protection of the individual and the community.
+<br> It is given before the scheduled three primary doses<br><br>
+
+<button class="button"><a class="scroll" data-speed="2000" href="#top">Jump to Top</a></button>
+</p>
+      <div class="w3-row">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+<div class="w3-card-4 w3-margin w3-white">
+
+    <div class="w3-container">
+      <h3 id="vacc"><b>Vaccination of Pregnant Women</b></h3>
+      </div>
+
+    <div class="w3-container">
+       <p>
+<b>What vaccines are recommended for pregnant women in National Immunization Schedule?</b><br>
+In National Immunization Schedule, two doses of Tetanus Toxoid(TT) vaccine are recommended for all pregnant women. First dose is given as soon as the pregnancy is confirmed, and the second dose 4 weeks after the first dose.However, if any pregnant woman has not received TT vaccination during her pregnancy, she should be given one dose of TT at the time of labour.
+<br><br>
+<b>Why do pregnant women require vaccination against Tetanus?</b><br>
+Tetanus, also known as Lockjaw, is a life-threatening disease causing seizures and severe muscle spasms, often leading to death by respiratory failure. In new-borns, disease present as tightly closed mouth due to spasm of jaw muscles. As a result, they cannot take feeds, and in the majority of cases die.<br>
+ Tetanus Toxoid (TT) vaccine is given to all pregnant women to protect them and their newborn babies from Tetanus. Due to sustained eff orts over years, India has been successful in eliminating Maternal and Neonatal Tetanus, and to sustain this status administration of TT vaccine to all pregnant women need to be ensured.
+
+<br><br>
+<b>Is it safe to give TT doses in all pregnancies?</b><br>
+Yes. Recommended doses of TT vaccine should be given to a woman every time she gets pregnant. Repeat doses only enhance immunity and do not cause any harm to the woman or her child.<br><br>
+
+<button class="button"><a class="scroll" data-speed="2000" href="#top">Jump to Top</a></button>
+</p>
+      <div class="w3-row">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+<div class="w3-card-4 w3-margin w3-white">
+
+    <div class="w3-container">
+      <h3 id="side"><b>Side Effects, Adverse Events, and Contraindications</b></h3>
+      </div>
+
+    <div class="w3-container">
+      <p>
+<b>What are the side effects of vaccination?</b><br>
+All vaccines induce immunity by causing the recipient’s immune system to react to the vaccine. Therefore, local reactions, fever and systemic symptoms can result as part of the immune response. In addition, some of the vaccine’s components (e.g. aluminium adjuvant, stabilizers or preservatives) can also lead to reactions.
+<br><br>
+<b> Is it necessary to get a fever after vaccination?</b><br>
+No. Though mild fever comes in majority of children who receive injectable vaccines, there are few children in which the immune response elicited by vaccine does not cause rise in body’s temperature. This is normal in some children, and there is no need to re-administer vaccine if fever does not come after vaccination.
+
+<br><br>
+<b> Can a sick child be vaccinated? Is cough, cold and mild fever contra-indications for immunization?</b><br>
+Yes. A sick child suffering from mild illness can be safely vaccinated. Symptoms of mild illness (like cough, cold, mild fever or mild diarrhoea) are not contraindications to vaccination. However, a child with moderate to severe illness requiring hospitalization (high grade fever, severe diarrhoea, etc.), should not be vaccinated during the acute phase
+
+<br><br>
+<b> What precautions should be taken after vaccination?</b><br>
+As a health worker, you should ensure that the parents/caretakers wait for 30 minutes at the health facility or the session site after vaccination. This is required to ensure that immediate care can be sought if there is any side effect or adverse event. Breastfeeding can be done after vaccination, even after giving oral vaccines. There is no effect of breast milk on efficacy of the vaccines.You should ensure that parents/caretakers do not apply any medicines or herbs at the injection site. In case of redness or swelling at the injection site, cold water compresses (i.e. a pad of clean cloth dipped into cold water) can be used. Please recommend Paracetamol for providing symptomatic relief to the child.
+
+<br><br>
+<b> Can any vaccine, like OPV, lead to infertility or impotency?</b><br>
+No. All vaccines used in Universal Immunization Programme are pre-tested and recommended by WHO. All these vaccines are highly safe and effective, and are being used in many other countries besides India. No vaccine can lead to infertility or impotency, and this, like many other myths related to vaccines, is baseless and wrong!
+
+<br><br>
+<b>Can Measles/MR vaccine lead to autism in children?</b><br>
+There is strong scientific evidence that measles/MR vaccination is not linked to autism, or any other conditions like inflammatory bowel disease or permanent neurological sequelae, which have been wrongly associated with this vaccine.<br><br>
+
+<b>Can vaccines cause allergy?</b><br>
+Vaccines are generally safe. However, some children may be allergic to certain vaccines or a component of vaccine (like antibiotic or preservative), and administration of vaccine in such children can result in allergic reaction, like itching, or appearance of red spots on the body, soon after immunization. These cases need to be managed immediately and in some cases may also require referral. After an allergic reaction, DO NOT repeat or provide subsequent doses of the same vaccine without consultation and advice of medical officer.<br><br>
+
+<button class="button"><a class="scroll" data-speed="2000" href="#top">Jump to Top</a></button>
+</p>
+      <div class="w3-row">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer" style="text-align:center; font-family: Franklin Gothic Medium">
+    <p>Developed by Nauvyashree A, Subitsha TLK and Ananya Jaya kumar</p>
+    </div>
+  </footer>
+
+</body>
+</html>

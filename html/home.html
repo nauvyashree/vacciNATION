@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>VacciNation Project home</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body{
+margin: 0;
+padding: 0;
+content: '';
+}
+.about{
+  position:absolute
+  top:35%;
+  left: 20%;
+  width: 75%;
+  padding: 1% 1% 5% 5%;
+height:55%;
+box-sizing: border-box;
+background: rgba(217, 217, 217,.68);
+}
+
+ul {
+  list-style-type: none;
+margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+.footer{
+  position:absolute;
+  display:inline-block;
+  left: 10%;
+  right: 10%;
+  bottom:0.5%;
+ }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#0a1c73;
+}
+
+/*Button used to open the chatbot*/
+.open-button {
+  background-color:#000;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  opacity: 0.88;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/*when you hover over buttons*/
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.col{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 24px;
+}
+
+.about-section {
+  padding: 45px;
+  text-align: center;
+  background-color:rgba(3, 3, 3,0.85);
+  color: white;
+}
+
+.contain {
+  padding: 0 16px;
+}
+
+.contain::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:#6e7175;
+}
+
+.butt {
+  border: none;
+  outline: 0;
+  display: block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.butt:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+ <h1 style="font-family:Century Gothic">VacciNation</h1>
+</header>
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="contact.html">Contacts</a></li>
+
+</ul>
+
+     <div class="about-section">
+       <h1 style="font-family:Goudy Old Style">About Us</h1><br>
+       <p style="font-family:Century Gothic, monospace">VacciNation is a socially relevant web application developed by 3 IT students from Anna University. We developed VacciNation to help parents or guardians all over the country to keep track of the vaccination schedules of their kids. Although India is a leading exporter of vaccines, our country is home to one-third of the
+world’s unimmunized children. The usual practice for keeping track of immunization is the immunization card provided by hospitals. This is only useful when the parents or guardians are educated about the need for vaccination. Our solution takes it a bit further by alerting the hospital when a baby/child needs to be vaccinated by keeping track of all the vaccination records of the individual and the parents/guardians can be alerted via SMS and email. This method is not only helpful in pushing the parents and guardians to get their kid immunized, but it also helps educate them about the need for on-time immunization. Our main goal is to reach and alert people who have less to no access to smartphones and wireless broadband connections and those who are unaware of the importance of vaccination.</p>
+    </div>
+<hr>
+    <h2 style="text-align:center"><b><em>Meet the Team</em></b></h2><br>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="../images/subitsha.jpeg" alt="Subitsha" style="padding:10px 0px 0px 85px ;width:310px;height:8%">
+          <div class="contain"><br>
+          <center>  <h3><b><em>Subitsha TLK</em></b></h3>
+            <p class="title">~ Backend Developer</p>
+
+              <p style="font-family:Cambria;font-size:130%">Email : subitsha1602@gmail.com </p></center>
+  <p><button class="butt"><a href="https://www.linkedin.com/in/subitshatlk/">LinkedIn</a></button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="../images/nauvya.png"  alt="Nauvyashree" style="padding:10px 0px 0px 85px ;width:310px;height:8%" >
+          <div class="contain"><br>
+          <center>  <h3><b><em>Nauvyashree A</em></b></h3>
+            <p class="title">~ UI / UX Designer</p>
+
+            <p style="font-family:Cambria;font-size:130%">Email : nauvya25@gmail.com </p></center>
+            <p><button class="butt"><a href="https://www.linkedin.com/in/nauvyashree/">LinkedIn</a></button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="../images/ananya.jpg"   alt="Ananya" style="padding:10px 0px 0px 85px ;width:310px;height:8%" >
+          <div class="contain"><br>
+            <center><h3><em><b>Ananya Jaya Kumar</b></em></h3>
+            <p class="title">~ Collaborative Developer</p>
+
+            <p style="font-family:Cambria;font-size:130%">Email : ananya0814@gmail.com </p></center>
+            <p><button class="butt"><a href="https://www.linkedin.com/in/ananya-kumar-8a51621aa/">LinkedIn</a></button></p>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    <button class="open-button" type="button" ><a href="http://vaccinechatbot.pythonanywhere.com/"><b><em>Need help with Vaccination Schedule?</em> Ask our ChatBot</b></a></button>
+
+
+<br>
+</body>
+</html>

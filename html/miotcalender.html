@@ -1,0 +1,130 @@
+<html>
+<head>
+
+<style>
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 15px;
+}
+
+table {
+border-spacing: 5px;
+}
+.button {
+  background-color:  #00001a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.about {
+  position: absolute;
+  left: 2%;
+  width: 65%;
+  padding: 5%;
+}
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#0a1c73;
+}
+
+.footer{
+  position:absolute;
+  display:inline-block;
+  left: 10%;
+  right: 10%;
+  bottom:0.5%;
+ }
+</style></head>
+<body>
+  <header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+   <h1 style="font-family:Century Gothic">VacciNation</h1>
+  </header>
+
+  <ul>
+    <li><a  href="home.html">Home</a></li>
+    <li><a  href="login.html">Login</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contacts</a></li>
+
+  </ul><br>
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/miotvaccine/30min" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+<table style="width:100%" id="table_body">
+  <tr id="tr">
+    <th>dob</th>
+    <th>email</th>
+    <th>name</th>
+    <th>phone</th>
+    <th>pid</th>
+    <th>last-vaccine</th>
+  <tbody>
+ </tbody>
+  </tr>
+</table>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+    authDomain: "vaccinebot.firebaseapp.com",
+    databaseURL: "https://vaccinebot.firebaseio.com",
+    projectId: "vaccinebot",
+    storageBucket: "vaccinebot.appspot.com",
+    messagingSenderId: "85668765310",
+    appId: "1:85668765310:web:8b84b019077889ba3b422f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/miotcalender.js"></script>
+
+</body>
+</html>

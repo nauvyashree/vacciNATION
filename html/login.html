@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>VacciNation Project login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+body{
+            margin: 0;
+            padding: 0;
+
+                        content: '';
+                        position: fixed;
+                        width: 100vw;
+                        height: 100vh;
+                        background-image: url("../images/bg1.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+
+                    }
+
+
+.container {
+
+     top: 60%;
+     left: 50%;
+
+     transform: translate(-50%,-50%);
+     width: 445px;
+     height: 390px;
+     padding: 50px 20px;
+  box-sizing: border-box;
+            background: rgba(230, 243, 255,.65);
+            position: absolute;
+}
+.container input
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .container input[type="text"],
+        .container input[type="password"]
+        {
+border:none;
+            border-bottom: 1.5px solid #000000;
+
+            opacity: 0.45;
+            display: inline-block;
+            width: 50%;
+            padding: 15px;
+            color: #000000;
+            font-size: 16px;
+
+        }
+        .button {
+          background-color:  rgba(0, 0,51,.87);
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+
+      }
+        .button:hover {
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+li {
+  float: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0a1c73;
+}
+.footer{
+  position:absolute;
+  display:inline-block;
+  left: 10%;
+  right: 10%;
+  bottom:0.5%;
+ }
+
+</style>
+</head>
+<body>
+
+
+
+
+
+<header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+ <h1 style="font-family:Century Gothic">VacciNation</h1>
+</header>
+
+<ul>
+  <li><a  href="home.html">Home</a></li>
+  <li><a class="active" href="login.html">Login</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="contact.html">Contacts</a></li>
+
+</ul>
+<div class="container">
+<h3 style="text-align:center ;font-family:Bahnschrift SemiBold">Enter your Login credentials</h3><br>
+
+	<b> Username : <input type="text" placeholder="Enter provided User ID" id="userid" required/><br><br>
+	 Password : </b><input type="password" placeholder="Enter Password" id="password" required/><br><br>
+
+  <button class="button b1" type="submit" onclick="login()">Login</button>
+    <button class="button b2" type="button" ><a href="login.html">Cancel</a></button>
+    <button class="button b3" type="button"><a href="home.html">Back to Home</a></button>
+
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+  <script>
+    // Your web app's Firebase configuration
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+      authDomain: "vaccinebot.firebaseapp.com",
+      databaseURL: "https://vaccinebot.firebaseio.com",
+      projectId: "vaccinebot",
+      storageBucket: "vaccinebot.appspot.com",
+      messagingSenderId: "85668765310",
+      appId: "1:85668765310:web:8b84b019077889ba3b422f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+  </script>
+
+  <script src="../js/login.js"></script>
+  <br><br><br> <footer>
+  <div class="footer" style="text-align:center; font-family: Franklin Gothic Medium">
+  <p>Developed by Nauvyashree A, Subitsha TLK and Ananya Jaya kumar</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<script src="../js/login.js" ></script>
+</body>
+</html>

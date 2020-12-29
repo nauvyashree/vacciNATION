@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>After login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+
+body{
+
+  background:#cff0ff;
+
+  background-repeat: no-repeat;
+}
+.about {
+  position: absolute;
+  left: 2%;
+  width: 65%;
+  padding: 5%;
+}
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color:#0a1c73;
+}
+.footer{
+  position:absolute;
+  display:inline-block;
+  left: 10%;
+  right: 10%;
+  bottom:0.5%;
+ }
+
+ img {
+  border: 5.7px solid #111;
+  display:inline-block;}
+.container {
+
+     top: 44%;
+     left: 30%;
+   position: absolute;
+  box-sizing: border-box;
+
+}
+     img:hover{
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.89);
+     }
+     .button {
+      background-color:  rgba(0, 0,51,.87);
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       -webkit-transition-duration: 0.4s; /* Safari */
+       transition-duration: 0.4s;
+
+     }
+     .button:hover {
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+     }
+
+</style>
+</head>
+<body>
+<header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+ <h1 style="font-family:Century Gothic">VacciNation</h1>
+</header>
+
+<ul>
+  <li><a  href="home.html">Home</a></li>
+  <li><a  href="login.html">Login</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="contact.html">Contacts</a></li>
+  <li></li>
+
+</ul><br>
+
+<center><h2>Select Hospital / <button class="button" onclick="logout()">Logout</button></h2></center><br>
+<div class="container">
+<a href="apollo-afterlogin.html">
+<img src="../images/apollo.jpg" alt="Apollo hospitals" style="width:45%;height:10%;"><br>
+</a><br>
+
+<a href="global-afterlogin.html">
+<img src="../images/globalhospital.jpg" alt="Global hospital" style="width:45%;height:10%;"><br>
+</a><br>
+
+<a href="miot-afterlogin.html">
+<img src="../images/miot.png" alt="Miot International Hospital"style="width:45%;height:10%;"><br>
+</a>
+<br>
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+    authDomain: "vaccinebot.firebaseapp.com",
+    databaseURL: "https://vaccinebot.firebaseio.com",
+    projectId: "vaccinebot",
+    storageBucket: "vaccinebot.appspot.com",
+    messagingSenderId: "85668765310",
+    appId: "1:85668765310:web:8b84b019077889ba3b422f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+</script>
+
+<script src="../js/login.js"></script>
+</body>
+</html>
